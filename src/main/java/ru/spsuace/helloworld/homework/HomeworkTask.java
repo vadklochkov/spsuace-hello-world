@@ -24,11 +24,11 @@ public class HomeworkTask {
     public static byte maxNumber(long a) {
         int count = 0;
         long temp = a;
-        long temp2 = a;
-        while (temp2 != 0) {
+        while (temp != 0) {
             count++;
-            temp2 /= 10;
+            temp /= 10;
         }
+        temp = a;
         int[] digits = new int[count];
         for (int i = count - 1; i >= 0; i--) {
             digits[i] = (int) (temp % 10);
